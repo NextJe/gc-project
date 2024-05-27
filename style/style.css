@@ -1,0 +1,231 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff6b6b;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ff6b6b;
+    color: #fff;
+    background-image: url('https://via.placeholder.com/1500x600');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-buttons {
+    position: relative;
+    z-index: 1;
+}
+
+.primary-button, .secondary-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.primary-button {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.primary-button:hover {
+    background-color: #e55e5e;
+}
+
+.secondary-button {
+    background-color: #fff;
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+}
+
+.secondary-button:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.courses, .testimonials, .benefits, .newsletter {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.course {
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+blockquote {
+    background-color: #f4f4f4;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ff6b6b;
+}
+
+cite {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.benefits li i {
+    color: #ff6b6b;
+    margin-right: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ff6b6b;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ff6b6b;
+    background-color: #ff6b6b;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #e55e5e;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav a:hover {
+    color: #ff6b6b;
+}
+
+footer .social a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #ff6b6b;
+}
